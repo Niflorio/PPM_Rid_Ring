@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "legal",
+      "type": "file",
+      "file": "01_Юридическая/Правовой статус.md",
+      "x": -850,
+      "y": -180,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "legalrisk",
+      "type": "file",
+      "file": "01_Юридическая/Патентные риски и договоры.md",
+      "x": -850,
+      "y": 170,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "tech",
+      "type": "file",
+      "file": "02_Технологическая/Принцип работы.md",
+      "x": -260,
+      "y": -180,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "techtest",
+      "type": "file",
+      "file": "02_Технологическая/Неопределённости и испытания.md",
+      "x": -260,
+      "y": 170,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "product",
+      "type": "file",
+      "file": "03_Продуктовая/Рыночная гипотеза.md",
+      "x": 330,
+      "y": -180,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "audience",
+      "type": "file",
+      "file": "03_Продуктовая/Целевая аудитория.md",
+      "x": 330,
+      "y": 170,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "competitors",
+      "type": "file",
+      "file": "03_Продуктовая/Конкуренты.md",
+      "x": 850,
+      "y": -180,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "trends",
+      "type": "file",
+      "file": "03_Продуктовая/Технотренды.md",
+      "x": 850,
+      "y": 170,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "hyp",
+      "type": "file",
+      "file": "04_Исследования/Бэклог гипотез.md",
+      "x": -260,
+      "y": 540,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "questions",
+      "type": "file",
+      "file": "04_Исследования/Вопросы автору.md",
+      "x": 330,
+      "y": 540,
+      "width": 430,
+      "height": 260
+    },
+    {
+      "id": "team",
+      "type": "file",
+      "file": "05_Команда/Работа с GitHub.md",
+      "x": 850,
+      "y": 540,
+      "width": 430,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-legal-legalrisk",
+      "fromNode": "legal",
+      "fromSide": "bottom",
+      "toNode": "legalrisk",
+      "toSide": "top",
+      "label": "права и условия"
+    },
+    {
+      "id": "e-tech-techtest",
+      "fromNode": "tech",
+      "fromSide": "bottom",
+      "toNode": "techtest",
+      "toSide": "top",
+      "label": "проверить"
+    },
+    {
+      "id": "e-product-audience",
+      "fromNode": "product",
+      "fromSide": "bottom",
+      "toNode": "audience",
+      "toSide": "top",
+      "label": "для кого"
+    },
+    {
+      "id": "e-product-competitors",
+      "fromNode": "product",
+      "fromSide": "bottom",
+      "toNode": "competitors",
+      "toSide": "top",
+      "label": "альтернативы"
+    },
+    {
+      "id": "e-product-trends",
+      "fromNode": "product",
+      "fromSide": "bottom",
+      "toNode": "trends",
+      "toSide": "top",
+      "label": "контекст"
+    },
+    {
+      "id": "e-audience-hyp",
+      "fromNode": "audience",
+      "fromSide": "bottom",
+      "toNode": "hyp",
+      "toSide": "top",
+      "label": "интервью"
+    },
+    {
+      "id": "e-techtest-hyp",
+      "fromNode": "techtest",
+      "fromSide": "bottom",
+      "toNode": "hyp",
+      "toSide": "top",
+      "label": "тесты"
+    },
+    {
+      "id": "e-legalrisk-hyp",
+      "fromNode": "legalrisk",
+      "fromSide": "bottom",
+      "toNode": "hyp",
+      "toSide": "top",
+      "label": "условия"
+    },
+    {
+      "id": "e-questions-techtest",
+      "fromNode": "questions",
+      "fromSide": "bottom",
+      "toNode": "techtest",
+      "toSide": "top",
+      "label": "ответы автора"
+    },
+    {
+      "id": "e-hyp-team",
+      "fromNode": "hyp",
+      "fromSide": "bottom",
+      "toNode": "team",
+      "toSide": "top",
+      "label": "задачи для команды"
+    }
+  ]
+}

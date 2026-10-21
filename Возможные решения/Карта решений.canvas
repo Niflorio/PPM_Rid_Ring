@@ -1,0 +1,192 @@
+{
+  "nodes": [
+    {
+      "id": "overview",
+      "type": "file",
+      "file": "Возможные решения/00_Обзор возможных решений.md",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 280,
+      "color": "4"
+    },
+    {
+      "id": "ring",
+      "type": "file",
+      "file": "Возможные решения/01_Упрощённое кольцо.md",
+      "x": -1040,
+      "y": -400,
+      "width": 400,
+      "height": 260,
+      "color": "5"
+    },
+    {
+      "id": "wrist",
+      "type": "file",
+      "file": "Возможные решения/02_Браслет или часы.md",
+      "x": -1040,
+      "y": 60,
+      "width": 400,
+      "height": 260,
+      "color": "5"
+    },
+    {
+      "id": "pair",
+      "type": "file",
+      "file": "Возможные решения/03_Связка кольцо и браслет.md",
+      "x": -520,
+      "y": 480,
+      "width": 400,
+      "height": 260,
+      "color": "3"
+    },
+    {
+      "id": "hub",
+      "type": "file",
+      "file": "Возможные решения/04_Программируемый хаб или брелок.md",
+      "x": 640,
+      "y": -400,
+      "width": 400,
+      "height": 260,
+      "color": "6"
+    },
+    {
+      "id": "gestures",
+      "type": "file",
+      "file": "Возможные решения/05_Жесты и визуальный интерфейс.md",
+      "x": 640,
+      "y": 60,
+      "width": 400,
+      "height": 260,
+      "color": "3"
+    },
+    {
+      "id": "everyday",
+      "type": "file",
+      "file": "Возможные решения/06_Бытовое многофункциональное кольцо.md",
+      "x": 60,
+      "y": -520,
+      "width": 400,
+      "height": 260,
+      "color": "2"
+    },
+    {
+      "id": "tests",
+      "type": "file",
+      "file": "Возможные решения/07_План проверки концепций.md",
+      "x": 60,
+      "y": 520,
+      "width": 440,
+      "height": 280,
+      "color": "1"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "Сначала ищем одно частое действие. Потом делаем простой макет и сравниваем его с кнопкой, телефоном и голосом. Миниатюризация — только если есть выигрыш.",
+      "x": -500,
+      "y": -520,
+      "width": 430,
+      "height": 180,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-overview-ring",
+      "fromNode": "overview",
+      "fromSide": "left",
+      "toNode": "ring",
+      "toSide": "right",
+      "label": "оставить кольцо"
+    },
+    {
+      "id": "e-overview-wrist",
+      "fromNode": "overview",
+      "fromSide": "left",
+      "toNode": "wrist",
+      "toSide": "right",
+      "label": "перенести на запястье"
+    },
+    {
+      "id": "e-overview-pair",
+      "fromNode": "overview",
+      "fromSide": "bottom",
+      "toNode": "pair",
+      "toSide": "top",
+      "label": "использовать пару"
+    },
+    {
+      "id": "e-overview-hub",
+      "fromNode": "overview",
+      "fromSide": "right",
+      "toNode": "hub",
+      "toSide": "left",
+      "label": "вынести настройки"
+    },
+    {
+      "id": "e-overview-gestures",
+      "fromNode": "overview",
+      "fromSide": "right",
+      "toNode": "gestures",
+      "toSide": "left",
+      "label": "управлять жестами"
+    },
+    {
+      "id": "e-overview-everyday",
+      "fromNode": "overview",
+      "fromSide": "top",
+      "toNode": "everyday",
+      "toSide": "bottom",
+      "label": "найти ежедневную функцию"
+    },
+    {
+      "id": "e-ring-tests",
+      "fromNode": "ring",
+      "fromSide": "bottom",
+      "toNode": "tests",
+      "toSide": "left",
+      "label": "сравнить"
+    },
+    {
+      "id": "e-wrist-tests",
+      "fromNode": "wrist",
+      "fromSide": "bottom",
+      "toNode": "tests",
+      "toSide": "left",
+      "label": "сравнить"
+    },
+    {
+      "id": "e-pair-tests",
+      "fromNode": "pair",
+      "fromSide": "right",
+      "toNode": "tests",
+      "toSide": "left",
+      "label": "проверить жесты"
+    },
+    {
+      "id": "e-hub-tests",
+      "fromNode": "hub",
+      "fromSide": "bottom",
+      "toNode": "tests",
+      "toSide": "right",
+      "label": "проверить интеграции"
+    },
+    {
+      "id": "e-gestures-tests",
+      "fromNode": "gestures",
+      "fromSide": "bottom",
+      "toNode": "tests",
+      "toSide": "right",
+      "label": "проверить жесты"
+    },
+    {
+      "id": "e-everyday-tests",
+      "fromNode": "everyday",
+      "fromSide": "bottom",
+      "toNode": "tests",
+      "toSide": "top",
+      "label": "выбрать одну функцию"
+    }
+  ]
+}
